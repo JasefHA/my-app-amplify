@@ -18,9 +18,7 @@ function Employees() {
     // Llamada a la API para obtener la lista de empleados
     const fetchEmployees = async () => {
       try {
-        const response = await axios.get(
-          "http://18.227.209.181:8000/employees/"
-        );
+        const response = await axios.get("http://3.129.24.254:8000/employees/");
         setEmployees(response.data);
 
         console.log("Response:", response.data);
